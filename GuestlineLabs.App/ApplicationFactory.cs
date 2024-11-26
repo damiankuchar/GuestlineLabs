@@ -5,8 +5,8 @@ namespace GuestlineLabs.App
 {
     public class ApplicationFactory
     {
-        private const string DefaultHotelsFilePath = "Data/hotels.json";
-        private const string DefaultBookingsFilePath = "Data/bookings.json";
+        private static readonly string DefaultHotelsFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/hotels.json");
+        private static readonly string DefaultBookingsFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data/bookings.json");
 
         public static Application Create(string[] args)
         {
