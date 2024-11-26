@@ -26,6 +26,22 @@ cd GuestlineLabs
 dotnet run --project GuestlineLabs.App
 ```
 
+Example - console input:
+```
+Availability(H1, 20240901, SGL)
+Availability(H1, 20240901-20240903, DBL)
+```
+
+Output (for default files):
+```
+Enter queries (empty line to exit):
+Availability(H1, 20240901, SGL)
+Availability for SGL in H1 from 2024-09-01 to 2024-09-01: 2
+
+Availability(H1, 20240901-20240903, DBL)
+Availability for DBL in H1 from 2024-09-01 to 2024-09-03: 1
+```
+
 ## Command-Line Arguments 🎯
 By default, the application will use **default files** for easier testing if no command-line arguments are provided.
 
